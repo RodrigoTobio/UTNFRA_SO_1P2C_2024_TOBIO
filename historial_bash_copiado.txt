@@ -1,0 +1,130 @@
+clear
+tree
+sudo snap install tree
+tree
+ssh-keygen -t ed25519
+cat $HOME/.ssh/*.pub
+mkdir repogit
+cd repogit/
+git clone https://github.com/upszot/UTN-FRA_SO_Examenes.git
+git clone git@github.com:RodrigoTobio/UTNFRA_SO_1P2C_2024_TOBIO.git
+clear
+./UTN-FRA_SO_Examenes/202410/script_Precondicion.sh ~/.bashrc && history -a
+ls
+cd UTNFRA_SO_1P2C_2024_TOBIO/
+ls
+cd RTA_SCRIPT_Examen_20241012/
+ls
+for i in {A..F}; do chmod 755 Punto_$i.sh; done
+ls
+cd ..
+ls
+git add .
+git status
+git commit -m 'init: commit inicial con estructura de carpetas y archivos vacíos'
+git config --global user.email "rodrigohtobio@gmail.com"
+git config --global user.name "RodrigoTobio"
+git commit -m 'init: commit inicial con estructura de carpetas y archivos vacíos'
+git status
+git push git push -u origin main
+git remote add origin s
+git remote add origin git@github.com:RodrigoTobio/UTNFRA_SO_1P2C_2024_TOBIO.git
+git status
+git push
+ls
+cd RTA_SCRIPT_Examen_20241012/
+ls
+vim Punto_A.sh
+./Punto_A.sh
+-ls /Examenes-UTN/
+-ls /Examenes-UTN/alumno_1
+-ls /Examenes-UTN/alumno_2
+-ls /Examenes-UTN/alumno_3
+-ls /Examenes-UTN/profesores
+ls /Examenes-UTN/
+ls /Examenes-UTN/alumno_1
+ls /Examenes-UTN/alumno_2
+ls /Examenes-UTN/alumno_3
+ls /Examenes-UTN/profesores
+clear
+cd ..
+git add .
+git status
+git commit -m 'feat(scripts): modifico el script Punto_A.sh para la funcionalidad pedida'
+ls
+cd RTA_SCRIPT_Examen_20241012/
+ls
+vim Punto_B.sh
+cat Punto_B.sh
+vim Punto_A.sh
+cd ..
+cd RTA_SCRIPT_Examen_20241012/
+ls
+./Punto_B.sh
+lsblk
+lsblk -f
+cat /etc/fstab
+clear
+cd ..
+git add .
+git commit -m 'feat(scripts): modifico el script Punto_B.sh para la funcionalidad pedida'
+git status
+ls
+cd RTA_SCRIPT_Examen_20241012/
+ls
+vim Punto_C.sh
+./Punto_C.sh
+sudo cat /etc/shadow
+groups p1c2_2024_A1
+groups p1c2_2024_A2
+groups p1c2_2024_A3
+groups p1c2_2024_P1
+ls -l /Examenes
+ls -l /Examenes-UTN/
+cd ..
+git add .
+git commit -m 'feat(scripts): modifico el script Punto_C.sh para la funcionalidad pedida'
+ls
+cd RTA_SCRIPT_Examen_20241012/
+ls
+vim Punto_D.sh
+./Punto_D.sh
+cd ..
+git add .
+git commit -m 'feat(scripts): modifico el script Punto_D.sh para la funcionalidad pedida'
+git status
+ls
+cd RTA_SCRIPT_Examen_20241012/
+ls
+vim Punto_D.sh
+vim Punto_E.sh
+./Punto_E.sh
+cd ..
+ls
+cd RTA_SCRIPT_Examen_20241012/
+vim Punto_E.sh
+./Punto_E.sh
+cd ..
+ls
+ls RTA_ARCHIVOS_Examen_20241012/
+cat RTA_ARCHIVOS_Examen_20241012/Filtro_Basico.txt
+git add .
+git commit -m 'feat(scripts): modifico el script Punto_E.sh para la funcionalidad pedida'
+git status
+cd RTA_SCRIPT_Examen_20241012/
+ls
+vim Punto_F.sh
+./Punto_F.sh
+cd ..
+ls
+ls RTA_ARCHIVOS_Examen_20241012/
+cat RTA_ARCHIVOS_Examen_20241012/Filtro_Avanzado.txt
+git add .
+git commit -m 'feat(scripts): modifico el script Punto_F.sh para la funcionalidad pedida'
+git status
+ls
+vim README.md
+git add .
+git commit -m 'docs: actualizo el README con mis datos personales'
+git status
+history -a
