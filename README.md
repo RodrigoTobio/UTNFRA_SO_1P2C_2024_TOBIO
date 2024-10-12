@@ -1,2 +1,5 @@
 # UTNFRA_SO_1P2C_2024_TOBIO
-Parcial_1
+Nombre: Rodrigo
+Apellido: Tobio
+Legajo: 117949
+Division: 113
